@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS BOOTSTRAP -->
+  <!-- CSS BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--CSS PRÓPRIO-->
+  <!--CSS PRÓPRIO-->
     <link rel="stylesheet" href="CSS/style.css">
-    <title>NSA - JOVEM EM AÇÃO</title>
+  <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+
+  <title>JOVEM EM AÇÃO</title>
 </head>
+
 <body>
+  <div class="container">
+    <div id="logo">
+      <img class="img-fluid" src="imagens/jovemAcaoLogo.png.png" alt="">
+    </div>
     <form class="form-signin">
-        <div class="text-center mb-4">
-          <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-          <h1 class="h3 mb-3 font-weight-normal">Labels flutuantes</h1>
-        </div>
-  
-        <div class="form-label-group">
-          <input type="email" id="inputEmail" class="form-control" placeholder="Endereço de email" required autofocus>
-          <label for="inputEmail">Endereço de email</label>
-        </div>
-  
-        <div class="form-label-group">
-          <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-          <label for="inputPassword">Senha</label>
-        </div>
-  
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="lembrar de mim"> Lembrar de mim
-          </label>
-        </div>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
-        <p class="mt-5 mb-3 text-muted text-center">&copy; 2017-2018</p>
-      </form>
+      <div class="form-group">
+        <label for="InputEmail1">Endereço de email</label>
+        <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Seu email">
+      </div>
+      <div class="form-group">
+        <label for="InputPassword1">Senha</label>
+        <input type="password" class="form-control" id="InputPassword1" placeholder="Senha"> 
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Mantenha me conectado</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
 </body>
 </html>
